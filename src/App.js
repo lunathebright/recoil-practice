@@ -1,9 +1,10 @@
 import { RecoilRoot } from "recoil";
+import TodoList from "./todos/TodoList";
 
 function App() {
   return (
     <RecoilRoot>
-      <div>a</div>
+      <TodoList />
     </RecoilRoot>
   );
 }
