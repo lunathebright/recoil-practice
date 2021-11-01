@@ -5,6 +5,14 @@ export const countState = atom({
   default: 0,
 });
 
+export const countSelector = selector({
+  key: "countSelector",
+  get: ({ get }) => {
+    const count = get(countState);
+    return count.toString();
+  },
+});
+
 export const inputState = atom({
   key: "inputState",
   default: "",
